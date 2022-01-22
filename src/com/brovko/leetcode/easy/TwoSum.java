@@ -1,4 +1,4 @@
-package com.brovko.leetcode.arrays;
+package com.brovko.leetcode.easy;
 
 import org.junit.Test;
 
