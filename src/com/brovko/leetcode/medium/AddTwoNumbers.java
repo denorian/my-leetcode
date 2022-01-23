@@ -75,12 +75,12 @@ public class AddTwoNumbers {
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         ListNode res = new ListNode(7, new ListNode(0, new ListNode(8)));
 
-        assertEquals( res, AddTwoNumbers.addTwoNumbers(l1, l2));
+        assertEquals( res, addTwoNumbers(l1, l2));
     }
 
     @Test
     public void test_2() {
-        assertEquals( new ListNode(0), AddTwoNumbers.addTwoNumbers(new ListNode(0), new ListNode(0)));
+        assertEquals( new ListNode(0), addTwoNumbers(new ListNode(0), new ListNode(0)));
     }
 
     @Test
@@ -88,7 +88,7 @@ public class AddTwoNumbers {
         ListNode l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
         ListNode l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
         ListNode res = new ListNode(8, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(0, new ListNode(0, new ListNode(0, new ListNode(1))))))));
-        assertEquals( res, AddTwoNumbers.addTwoNumbers(l1, l2));
+        assertEquals( res, addTwoNumbers(l1, l2));
     }
 }
 
