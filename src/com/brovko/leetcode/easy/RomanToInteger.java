@@ -67,16 +67,16 @@ public class RomanToInteger {
 
     @Test
     public void test_1() {
-        assertEquals( 3,RomanToInteger.romanToInt("III"));
+        assertEquals(3, romanToInt("III"));
     }
 
     @Test
     public void test_2() {
-        assertEquals( 58,RomanToInteger.romanToInt("LVIII"));
+        assertEquals(58, romanToInt("LVIII"));
     }
 
     @Test
     public void test_3() {
-        assertEquals( 1994,RomanToInteger.romanToInt("MCMXCIV"));
+        assertEquals(1994, romanToInt("MCMXCIV"));
     }
 }
