@@ -5,6 +5,15 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class SearchInsertPosition {
+
+    /**
+     * Given a sorted array of distinct integers and a target value, return the index if the target is found.
+     * If not, return the index where it would be if it were inserted in order.
+     * You must write an algorithm with O(log n) runtime complexity.
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int searchInsert(int[] nums, int target) {
         int start = 0;
         int end =  nums.length - 1;
