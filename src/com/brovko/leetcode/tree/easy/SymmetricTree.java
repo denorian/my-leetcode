@@ -1,4 +1,4 @@
-package com.brovko.leetcode.easy;
+package com.brovko.leetcode.tree.easy;
 
 import com.brovko.leetcode.common.TreeNode;
 import org.junit.Test;
