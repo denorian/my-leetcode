@@ -18,6 +18,7 @@ public class BestTimeToBuyAndSellStock {
         int max = Integer.MIN_VALUE;
         int minIndex = 0;
         int maxIndex = 0;
+        int profit = 0;
 
         for (int i = 0; i < prices.length; i++) {
             if (prices[i] > max) {
@@ -31,17 +32,26 @@ public class BestTimeToBuyAndSellStock {
                 minIndex = i;
                 maxIndex = i;
             }
+
+            if(minIndex < maxIndex && profit < (max - min))
+                profit = max - min;
         }
 
-        return minIndex < maxIndex ? max - min : 0;
+        return profit;
     }
 
     @Test
     public void test_1() {
         assertEquals(5, maxProfit(new int[]{7,1,5,3,6,4}));
     }
+
     @Test
     public void test_2() {
         assertEquals(0, maxProfit(new int[]{7,6,4,3,1}));
+    }
+
+    @Test
+    public void test_3() {
+        assertEquals(2, maxProfit(new int[]{2,4,1}));
     }
 }
