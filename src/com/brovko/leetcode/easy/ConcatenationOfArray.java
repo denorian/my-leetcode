@@ -27,7 +27,6 @@ public class ConcatenationOfArray {
 
     @Test
     public void test_2() {
-        int[] source = {1,3,2,1};
         assertArrayEquals(
             new int[]{1,3,2,1,1,3,2,1},
             getConcatenation( new int[]{1,3,2,1})
