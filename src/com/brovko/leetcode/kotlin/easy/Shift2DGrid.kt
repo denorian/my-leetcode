@@ -32,6 +32,26 @@ class Shift2DGrid {
         return list
     }
 
+    fun shiftGrid2(grid: Array<IntArray>, k: Int): List<List<Int>> {
+        val rowSize = grid.get(0).size
+        val line = IntArray(grid.size * rowSize)
+
+        for (i in 0 until line.size) {
+            line[i] = grid[i / rowSize][i % rowSize];
+        }
+
+        val res = List<ArrayList<Int>>(grid.size) { ArrayList() }
+        val newK =  k % line.size
+
+        for (i in 0 until line.size) {
+            val lineIndex = if(i < newK) line.size - newK + i else i - newK
+            val rowNumber = i / rowSize
+            res.get(rowNumber).add(line[lineIndex])
+        }
+
+        return res
+    }
+
     @Test
     fun test1() {
         assertContentEquals(
