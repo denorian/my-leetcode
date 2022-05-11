@@ -11,7 +11,7 @@ class CountSortedVowelStrings {
      * A string s is lexicographically sorted if for all valid i, s[i]
      * is the same as or comes before s[i+1] in the alphabet.
      */
-/   var vowels = listOf('a', 'e', 'i', 'o', 'u')
+    var vowels = listOf('a', 'e', 'i', 'o', 'u')
     var result = 0
 
     fun countVowelStrings(n: Int): Int {
